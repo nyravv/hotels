@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels Lagoona</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-top">
+        <a class="logo" href="#">
+          <img class="logo-img" src="/img/Header/Logo.png" alt="Lagoona">
+        </a>
+        <a href="tel:+7495322544834">+7 495 322 54 48 34</a>
+        <span class="header-top-personal-area">Личный кабинет</span> 
+      </div>
+      <div class="header-bottom">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Преимущества</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Размещение</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Блог</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+          <form action="#" method="post">
+            <input class="search" type="search" name="search" id="search" placeholder="Поиск"> <!-- Иконку поиска в css добавлять-->
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- <h1 class="visuallyhidden">Lagoona-сеть отелей</h1> -->
+      <section class="section-reservation">
+        <h2 class="heading">Быстрая бронь</h2>
+        <form action="#" method="post">
+          <input class="reservation-field" type="text" placeholder="Город">
+          <input class="reservation-field" type="text" placeholder="Категория номера">
+          <input class="reservation-field" type="date" placeholder="Дата заселения">
+          <input class="reservation-field" type="number" placeholder="Количество ночей">
+          <input class="reservation-field" type="number" placeholder="Количество гостей">
+          <input class="reservation-field" type="submit" value="Найти номер">
+        </form>
+        <span class="reservation-available-offers">9 756 предложений доступно</span>
+      </section>
+
+      <section class="section-special-offer">
+        <h2 class="heading">Спецпредложение</h2>
+        <div class="special-offer">
+          <img class="special-offer-img" src="/img/SpecialOffer/22.jpg" alt="Картинка номера люкс">
+          <strong class="special-offer-rooms">Номера категории люкс</strong>
+          <p class="special-offer-price">от 5 000 р</p>
+          <a class="special-offer-link-detailed" href="#">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="section-about-us">
+        <h2 class="heading">О нас</h2>
+        <p class="about-us-description">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
+      </section>
+
+      <section class="section-services">
+        <h2 class="heading">Услуги</h2>
+          <ul class="services-list">
+            <li class="services-item">
+              <!-- Похоже, что вся область это ссылка, или только картинка и подпись со стрелочкой? Надо ли оборачивать каждую ссылку в div? Или может надо обернуть каждую картинку в див и описание в див?-->
+              <a class="services-link" href="#">
+              <img class="services-img" src="/img/Services/10.jpg" alt="Картинка с бокалами">
+              <span class="services-description">Эксклюзивное обслуживание</span>
+              <p class="services-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link" href="#">
+              <img class="services-img" src="/img/Services/15.jpg" alt="Картинка банкетного зала">
+              <span class="services-description">Аренда банкетных залов</span>
+              <p class="services-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link" href="#">
+              <img class="services-img" src="/img/Services/12.jpg" alt="Картинка бассейна">
+              <span class="services-description">Сауны, бассейны, бани, фитнес-залы</span>
+              <p class="services-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+              </a>
+            </li>
+            <li class="services-item">
+              <a class="services-link" href="#">
+              <img class="services-img" src="/img/Services/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg" alt="Картинка с машинами">
+              <span class="services-description">Охраняемые автомобильные стоянки</span>
+              <p class="services-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+              </a>
+            </li>
+          </ul> 
+      </section>
+
+      <section class="section-advantage">
+        <h2 class="heading">Преимущества</h2>
+          <ul class="advantage-list"> 
+            <!-- Надо ли всё что в li оборачивать в див? -->
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!--для иконок должен быть скопирован svg код, но он большой, пока так оставлю-->
+                <!-- <svg>bathtub.svg</svg> -->
+              </div>
+              <p class="advantage-description">Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>hanger.svg</svg> -->
+              </div>
+              <p class="advantage-description">Значимость этих проблем настолько очевидна, что вопрос остается открытым</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>heating.svg</svg> -->
+              </div>
+              <p class="advantage-description">Таким образом реализация плановых заданий играет важную роль для понимания</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>hotel-key.svg</svg> -->
+              </div>
+              <p class="advantage-description">Повседневная практика показывает, что сложившаяся структура организации</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>parking.svg</svg> -->
+              </div>
+              <p class="advantage-description">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>reception.svg</svg> -->
+              </div>
+              <p class="advantage-description">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>security-box.svg</svg> -->
+              </div>
+              <p class="advantage-description">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon">
+                <!-- <svg>swimming-pool.svg</svg> -->
+              </div>
+              <p class="advantage-description">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+            </li>
+          </ul>
+      </section>
+
+      <section class="section-accommodation">
+        <h2 class="heading">Размещение</h2>
+        <ul class="accommodation-list">
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть? -->
+            <img class="accommodation-img1" src="/img/Accommodation/23.jpg" alt="Отель на фоне розового заката">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">4 698 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona española</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 4 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_white.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img2" src="/img/Accommodation/24.jpg" alt="Отель желтые стены">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">5 148 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona son típicas</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 4 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_white.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img3" src="/img/Accommodation/26.jpg" alt="Мостик над бассейном">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 254 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona de la guerra</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 5 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img4" src="/img/Accommodation/29.jpg" alt="Отель с подсветкой вечером">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 320 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona mentira piadosa</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 5 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img5" src="/img/Accommodation/30.jpg" alt="Голубое небо отель с бассейном">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 457р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona empujar la creatividad</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 4 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_white.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img6" src="/img/Accommodation/31.jpg" alt="Бессейн с зонтами">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 490 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona el retorno</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 4 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_white.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img7" src="/img/Accommodation/27.jpg" alt="Отель с бассейном вечером">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 505 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona enfermo terminó</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 5 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img8" src="/img/Accommodation/32.jpg" alt="Белый отель и куст">
+            <div class="accommodation-desc">
+              <span class="accommodation-desc-from">от</span>
+              <strong class="accommodation-desc-price">6 824 р </strong>
+              <span class="accommodation-desc-night">/ ночь</span>
+              <p class="accommodation-desc-name-hotel">Lagoona suerte siguió siempre</p>
+              <span class="accommodation-desc-location">Барселона, Испания</span>
+            </div>
+            <div class="accommodation-rating">
+              <img src="/img/Accommodation/star_yellow.png" alt="Рейтинг отеля 4 из 5">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_yellow.png" alt="">
+              <img src="/img/Accommodation/star_white.png" alt="">
+            </div>
+            <a href="#" class="accommodation-link">
+              Номера
+            </a>
+          </li>
+
+          <li class="accommodation-item">
+            <!-- надо ли оборачивать картинку в отдельный div и мб весь li в отдельный div обернуть -->
+            <img class="accommodation-img9" src="/img/Accommodation/41.jpg" alt="Горы у моря">
+            <a href="#" class="accommodation-link">
+              Посмотреть все варианты
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
