@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'MullerBold';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+	font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerLight';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+	font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerRegular';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MullerRegular', sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  /* Блочная модель */
+  margin: 0;
+  margin-left: 42px;
+
+  /* Типографика */
+  font-size: 40px;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+
+}
+
+.container {
+  /* Блочная модель */
+  max-width: 1198px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+
+
+/* Шапка header*/
+.header {
+  padding-bottom: 65px;
+}
+
+.header-tel { /* Верх шапки */
+  /* Блочная модель */
+  margin-right: auto;
+
+  /* Типографика */
+  font-size: 22px;
+  font-family: "MullerBold";
+  color: rgb(102, 102, 102);
+}
+
+.logo {
+  margin-right: 25px;
+}
+
+.header-top {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 112px;
+}
+
+.header-top-personal-area {
+  /* Блочная модель */
+  padding-right: 10px;
+
+  /* Типографика */
+  font-size: 16px;
+  color: rgb(204, 153, 51);
+  
+}
+
+.header-bottom { /* Низ шапки */
+  height: 70px;
+}
+
+.nav {
+  /* Блочная модель */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  border-radius: 12px;
+  /* Оформление */
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-list {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: auto;
+  padding-left: 21px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+
+.header-search { /* Кнопка поиска в низу шапки*/
+  /* Блочная модель */
+  margin-left: 122px;
+  margin-right: 21px;
+  padding-left: 23px;
+  width: 355px;
+  border-radius: 15px;
+  height: 48px;
+  border: none;
+
+  /* Типографика */
+  font-size: 14px;
+  font-family: "MullerRegular";
+  color: rgb(190, 190, 190);
+  line-height: 1;
+  
+  /* Оформление */
+  background-color: rgb(241, 241, 241);
+}
+
+
+/* Блоки Быстрая бронь и Спецпредложение */
+.container-reservation-special-offer {
+  padding-bottom: 65px;
+}
+
+.container-hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading-hero { /* h2 */
+  margin-bottom: 20px;
+}
+
+/* Форма Быстрая бронь */
+.section-reservation {
+  margin-right: auto;
+}
+
+.form-reservation {
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+  justify-content: space-between;
+}
+
+.reservation-field {
+  /* Блочная модель */
+  width: 518px;
+  height: 70px;
+  border: none;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-reservation { /* Кнопка Найти номер */
+  /* Блочная модель */
+  width: 159px;
+  height: 70px;
+  margin-right: 30px;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerBold";
+  color: rgb(255, 255, 255);
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(204, 153, 51);
+  cursor: pointer;
+}
+
+.submit-offers { /* В одну строку сделала кнопку и кол-во предложений вот так */
+  display: flex;
+  align-items: center;
+}
+
+
+/* Блок Спецпредложение */
+.special-offer {
+  /* Блочная модель */
+  display: flex;
+  align-items: flex-end;
+  width: 595px;
+  height: 540px; /* Не так высоту надо задавать наверно */
+ 
+  /* Оформление */
+  background: url(/img/SpecialOffer/22.jpg) no-repeat;
+}
+
+.special-offer-content {
+  width: 321px;
+  margin-left: 40px; 
+  margin-bottom: 31px;
+}
+
+.special-offer-rooms { /* Номера категории люкс */
+  /* Блочная модель */
+  margin: 0;
+  margin-bottom: 30px;
+
+  /* Типографика */
+  font-size: 66px;
+  font-family: "MullerBold";
+  color: rgb(255, 255, 255);
+  line-height: 0.879;
+}
+
+.special-offer-price { /* от 5 000 р */
+  /* Блочная модель */
+  margin-right: 37px;
+
+  /* Типографика */
+  font-size: 35px;
+  font-family: "MullerRegular";
+  color: rgba(255, 255, 255, 0.49);
+}
+
+.special-offer-link-detailed { /* Подробнее */
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(255, 204, 102);
+}
+
+
+/* "О нас" блок с текстом */
+.about-us-description {
+  /* Блочная модель */
+  max-width: 880px;
+  margin: 8px 0 50px 43px;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(102, 102, 102);
+  line-height: 2;
+}
+
+
+/* Услуги */
+.section-services {
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.services-item {
+  /* Блочная модель */
+  margin-bottom: 24px;
+  max-width: 572px;
+  min-height: 325px;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.services-item:nth-child(2n+1) {
+  margin-right: auto;
+}
+
+
+/* Преимущества */
+.section-advantage{
+  margin-bottom: 40px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.advantage-item {
+  /* Блочная модель */
+  margin-bottom: 24px;
+  max-width: 275px;
+  min-height: 275px;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.advantage-item:not(:nth-child(4n)) {
+  margin-right: auto;
+}
+
+
+/* Размещение */
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.accommodation-item {
+  /* Блочная модель */
+  margin-bottom: 25px;
+  min-width: 373px;
+  min-height: 441px;
+/* Вот тут непонятно, если задать  max-width, то последний блок ломается */
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+  margin-right: auto;
+}
+
+.accommodation-img {
+  /* Оформление */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; 
+}
+
+
+
+
+
+
+
