@@ -265,6 +265,7 @@ h2 {
   /* Оформление */
   background: url('../img/SpecialOffer/22.jpg') no-repeat;
   border-radius: 12px;
+  background-size: cover;
 }
 
 .special-offer-content {
@@ -353,8 +354,8 @@ h2 {
   /* width: calc((100% - 24px)/2); без calc красивее блоки становятся друг под друга при сжатии */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 105px 33px 45px;
+  justify-content: flex-start;
+  padding: 190px 105px 33px 45px;
   flex: 1 1 50%;
   /* Оформление */
   border-radius: 12px;
@@ -443,10 +444,10 @@ h2 {
   max-width: 275px;
   min-height: 275px;
   width: calc((100% - 23px)/2);
-  padding: 44px 45px 33px 45px;
+  padding: 115px 45px 33px 45px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* flex: 1 1 25%; */
 
   /* Оформление */
@@ -624,6 +625,7 @@ h2 {
 .accommodation-item:last-child {
   background-image: url('../img/Accommodation/41.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .accommodation-link-all {
