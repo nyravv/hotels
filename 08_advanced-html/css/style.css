@@ -1,0 +1,917 @@
+@font-face {
+  font-family: 'MullerBold';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerLight';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MullerRegular';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'MullerRegular', sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  /* Блочная модель */
+  margin: 0;
+  margin-left: 42px;
+
+  /* Типографика */
+  font-size: 40px;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+}
+
+.container {
+  /* Блочная модель */
+  max-width: 1198px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+
+
+/* Шапка header*/
+.header {
+  padding-bottom: 65px;
+}
+
+.header-tel { /* Верх шапки */
+  /* Блочная модель */
+  margin-right: auto;
+
+  /* Типографика */
+  font-size: 22px;
+  font-family: "MullerBold";
+  color: rgb(102, 102, 102);
+  line-height: 1;
+}
+
+.logo {
+  margin-right: 26px;
+}
+
+.header-top {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 112px;
+}
+
+.header-top-personal-area {   /* Личный кабинет */
+  /* Блочная модель */
+  padding-right: 10px;
+
+  /* Типографика */
+  font-size: 16px;
+  color: rgb(204, 153, 51);
+}
+
+.header-top-personal-area:before {
+  content: "\f0a9"; /* добавляем иконку стрелочку */
+
+  /* Блочная модель */
+  margin-right: 3px; 
+
+  /* Типографика */
+  font-family: FontAwesome;
+  color: inherit;
+}
+
+.header-bottom { /* Низ шапки */
+  height: 70px; /* min-height не получилось задать */
+}
+
+.nav {
+  /* Блочная модель */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  border-radius: 12px;
+  justify-content: space-between;
+  /* Оформление */
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-list {
+  /* Блочная модель */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left: 21px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 47px;
+}
+
+
+
+.header-search { /* Кнопка поиска в низу шапки*/
+  /* Блочная модель */
+  margin-left: 121px;
+  margin-right: 21px;
+  padding-left: 23px;
+  width: 355px; /* не получилось сделать max-width */
+  border-radius: 15px;
+  min-height: 48px;
+  border: none;
+
+  /* Типографика */
+  font-size: 14px;
+  font-family: "MullerRegular";
+  color: rgb(190, 190, 190);
+  line-height: 1;
+  
+  /* Оформление */
+  background: url('../img/Header/search.svg') no-repeat  rgb(241, 241, 241);
+  background-position: 312px center;
+  background-size: 22px; 
+}
+
+
+
+/* Блоки Быстрая бронь и Спецпредложение */
+.container-reservation-special-offer {
+  padding-bottom: 65px;
+}
+
+.container-hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading-hero { /* h2 */
+  margin-bottom: 20px;
+}
+
+/* Форма Быстрая бронь */
+.section-reservation {
+  margin-right: auto;
+  max-width: 518px;
+  width: 100%;
+}
+
+.form-reservation {
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+  justify-content: space-between;
+}
+
+.reservation-field {
+  /* Блочная модель */
+  min-height: 70px;
+  border: none;
+  padding-left: 21px;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-reservation { /* Кнопка Найти номер */
+  /* Блочная модель */
+  max-width: 159px;
+  width: 100%;
+  min-height: 70px;
+  margin-right: 30px;
+  padding-left: 5px;  /* Подгоняю отступы */
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerBold";
+  color: rgb(255, 255, 255);
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(204, 153, 51);
+  cursor: pointer;
+}
+
+.submit-offers { /* В одну строку сделала кнопку и кол-во предложений вот так */
+  display: flex;
+  align-items: center;
+}
+
+.reservation-number-offers { /* span 9 756 предложений доступно */
+  color: #cc9933;
+}
+
+
+/* Блок Спецпредложение */
+.section-special-offer {
+  max-width: 595px ; 
+  width: 100%;
+}
+
+.special-offer {
+  /* Блочная модель */
+  display: flex;
+  align-items: flex-end;
+ 
+  /* Оформление */
+  background: url('../img/SpecialOffer/22.jpg') no-repeat;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+.special-offer-content {
+  max-width: 330px;
+  width: 100%;
+  margin-top: 265px;
+  margin-left: 41px; 
+  margin-bottom: 31px;
+}
+
+.special-offer-rooms { /* Номера категории люкс */
+  /* Блочная модель */
+  margin: 0;
+  margin-bottom: 30px;
+
+  /* Типографика */
+  font-size: 66px;
+  font-family: "MullerBold";
+  color: rgb(255, 255, 255);
+  line-height: 0.879;
+}
+
+.special-offer-price { /* от 5 000 р */
+  /* Блочная модель */
+  margin-right: 37px;
+
+  /* Типографика */
+  font-size: 35px;
+  font-family: "MullerRegular";
+  color: rgba(255, 255, 255, 0.49);
+}
+
+.special-offer-link-detailed { /* Подробнее */
+  /* Блочная модель */
+  display: inline-block;
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: #ffcc66;
+}
+
+.special-offer-link-detailed:after {
+  content: "\f105"; /* добавляем иконку стрелочку к подробнее*/
+  /* Блочная модель */
+  display: inline-block;
+  margin-left: 7px;
+  transform: translateY(5px);
+  /* Типографика */
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 30px;
+}
+
+
+/* "О нас" блок с текстом */
+.about-us-description {
+  /* Блочная модель */
+  max-width: 881px;
+  margin: 8px 0 50px 43px;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(102, 102, 102);
+  line-height: 2;
+}
+
+
+/* Услуги */
+.section-services {
+  margin-bottom: 40px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.services-item {
+  /* Блочная модель */
+  margin-bottom: 24px;
+  max-width: 572px;
+  width: 100%;
+  min-height: 325px;
+  /* width: calc((100% - 24px)/2); без calc красивее блоки становятся друг под друга при сжатии */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 190px 105px 33px 45px;
+  flex: 1 1 50%;
+  /* Оформление */
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+}
+
+.services-item:nth-child(2n+1) {
+  margin-right: auto;
+}
+
+.services-item-1 { /* Фоновые картинки для блоков Услуги */
+  background-image: url('../img/Services/10.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-item-2 {
+  background-image: url('../img/Services/15.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-item-3 {
+  background-image: url('../img/Services/12.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-item-4 {
+  background-image: url('../img/Services/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.services-description { /* Заголовок h3 в описании Услуги */
+  /* Блочная модель */
+  margin: 0;
+  margin-bottom: 5px;
+  /* Типографика */
+  font-size: 22px;
+  font-family: "MullerMedium";
+  font-weight: normal;
+  color: rgb(204, 153, 51);
+}
+
+.services-description:after {
+  content: "\f105"; /* добавляем иконку стрелочку в Услуги */
+  /* Блочная модель */
+  display: inline-block;
+  margin-left: 10px; 
+  transform: translateY(4px);
+
+  /* Типографика */
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.services-text {
+  /* Блочная модель */
+  margin: 0;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  line-height: 2;
+}
+
+
+/* Преимущества */
+.section-advantage{
+  margin-bottom: 40px;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 21px;
+}
+
+.advantage-item {
+  /* Блочная модель */
+  margin-bottom: 24px;
+  max-width: 275px;
+  min-height: 275px;
+  width: calc((100% - 23px)/2);
+  padding: 112px 45px 33px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* flex: 1 1 25%; */
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.advantage-item:not(:nth-child(4n)) {
+  margin-right: auto;
+}
+
+.advantage-item-1 { /* Фоновые картинки для блоков Преимущества */
+  background-image: url('../img/Advantages/bathtub.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-item-2 { 
+  background-image: url('../img/Advantages/hanger.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-item-3 { /* Фоновые картинки для блоков Преимущества */
+  background-image: url('../img/Advantages/heating.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 45px 39px;
+}
+
+.advantage-item-4 { 
+  background-image: url('../img/Advantages/hotel-key.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 46px 40px;
+}
+
+.advantage-item-5 { 
+  background-image: url('../img/Advantages/parking.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-item-6 { 
+  background-image: url('../img/Advantages/reception.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-item-7 { 
+  background-image: url('../img/Advantages/security-box.svg');
+  background-size: 24%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-item-8 { 
+  background-image: url('../img/Advantages/swimming-pool.svg');
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+}
+
+.advantage-description { /* текст <p> в Преимущества */
+  /* Блочная модель */
+  margin: 0;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  line-height: 2;
+}
+
+
+/* Размещение */
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.accommodation-item {
+  /* Блочная модель */
+  margin-bottom: 25px;
+  max-width: 373px;
+  min-height: 441px;
+  width: calc((100% - 24px)/3);
+  flex: 1 1 33,33%;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.accommodation-content {
+  padding: 29px 0px 0px 46px;
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-content-rating { /* текст <p> от цена р /ночь */
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.accommodation-desc-from { /* от <span> */
+  color: #a4a4a4;
+}
+
+.accommodation-desc-price { /* цена р */
+  color: #333333;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.accommodation-desc-night { /* /ночь */
+  display: inline-block;
+  margin-right: 32px;
+  
+}
+.accommodation-stars { /* Рейтинг звёздочки */
+  letter-spacing: 3px;
+}
+
+.accommodation-desc-name-hotel { /* h3 название отеля */
+  /* Блочная модель */
+  margin: 0;
+  margin-bottom: 15px;
+
+  /* Типографика */
+  color: #333333;
+  font-size: 16px;
+}
+
+.accommodation-desc-location { /* Барселона, Испания */
+  margin-bottom: 20px;
+}
+
+.accommodation-item:not(:nth-child(3n)) {
+  margin-right: auto;
+}
+
+.accommodation-img {
+  /* Оформление */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; 
+}
+
+.accommodation-link { /* Номера кнопка-ссылка */
+  /* Блочная модель */
+  display: inline-block;
+  border-radius: 12px;
+  border: 1px solid #cc9933;
+  max-width: 98px;
+  min-height: 39px;
+  width: 100%;
+  padding-top: 10px;  
+  /* только так получилось сделать по центру надпись */
+
+  /* Типографика */
+  color: #cc9933;
+  font-size: 16px;
+  font-family: "MullerBold";
+  text-align: center;
+  /* vertical-align: middle;
+  top: 50%;  не помогает сделать по центру */
+}
+
+.accommodation-item:last-child {
+  background-image: url('../img/Accommodation/41.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accommodation-link-all {
+  /* Блочная модель */
+  display: inline-block;
+  padding: 353px 0px 0px 39px;
+
+  /* Типографика */
+  font-size: 22px;
+  font-family: "MullerMedium";
+  color: rgb(255, 255, 255);
+  line-height: 1.455;
+  /* text-align: center; */
+}
+
+.accommodation-link-all:after {
+  content: "\f105"; /* добавляем иконку стрелочку к Посмотреть все варианты */
+  /* Блочная модель */
+  display: inline-block;
+  transform: translateY(5px);
+  margin-left: 7px;
+
+  /* Типографика */
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 30px;
+}
+
+
+
+/* Контакты и Напишите нам */
+.container-contacts-request-inside {
+  /* Блочная модель */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 35px;
+  margin-bottom: 22px;
+}
+
+/* Контакты */
+.section-contacts {
+  margin-right: 178px;
+}
+
+.contacts-list { /* ul контакты */
+  /* Блочная модель */
+  margin-top: 21px;
+  padding-top: 22px;
+  max-width: 472px;
+  min-height: 619px;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.contacts-item:not(:last-child) { /* все li, кроме кнопки */
+  /* Блочная модель */
+  display: flex;
+  justify-content: space-between;
+  width: 383px;
+  margin-left: 45px;
+  margin-right: 44px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  /* Оформление */
+  border-bottom: 1px solid #cccccc;
+}
+
+
+.contacts-heading { /* h3 слева в контактах */
+  /* Блочная модель */
+  width: 38%;
+  margin: 0;
+
+  /* Типографика */
+  font-size: 22px;
+  font-family: "MullerBold";
+  color: rgb(102, 102, 102);
+  /* line-height: 1.455; */
+}
+
+.contacts-info { /* текст с описанием справа */
+  /* Блочная модель */
+  width: 62%;
+
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerRegular";
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link { /* телефоны и email */
+  color: #cc9933;
+}
+
+.contacts-schedule { /* p расписание */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contacts-mail-desc {
+  color: #999999;
+}
+
+.contacts-btn { /* button Построить маршрут */
+  /* Блочная модель */
+  display: inline-block;
+  max-width: 214px;
+  width: 100%;
+  min-height: 68px;
+  margin-bottom: 44px;
+  margin-top: 44px;
+  margin-left: 45px;
+  border: 1px solid #cc9933;
+
+  /* Типографика */
+  color: #cc9933;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: inherit;
+}
+
+
+/* Напишите нам */
+.heading-request { /* h2 */
+  margin-top: 55px;
+  margin-left: 33px;
+  margin-bottom: 33px;
+}
+
+.request-form {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 388px;
+  height: 100%;
+}
+
+.request-input {
+  /* Блочная модель */
+  width: 340px;
+  min-height: 70px;
+  border: none;
+  padding-left: 21px;
+  margin-bottom: 23px;
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  color: #999999;
+}
+
+.request-content { /* textarea Сообщение... */
+  /* Блочная модель */
+  padding-top: 16px;
+  min-height: 110px;
+  height: 100%;
+
+  /* Оформление */
+  resize: none;
+}
+
+.btn-send { /* Кнопка Отправить */
+  /* Блочная модель */
+  min-height: 70px;
+  
+  /* Типографика */
+  font-size: 16px;
+  font-family: "MullerBold";
+  color: rgb(255, 255, 255);
+
+  /* Оформление */
+  border-radius: 12px;
+  background-color: rgb(204, 153, 51);
+  cursor: pointer;
+  border: none;
+}
+
+
+/* footer */
+.footer {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  /* font-family: "Myriad Pro"; */
+}
+
+.container-footer {
+  /* Блочная модель */
+  display: flex;
+  justify-content: space-between;
+  padding: 41px 52px;
+  min-height: 338px;
+  height: 100%;
+
+  /* Оформление */
+  border-radius: 12px;
+  background: url('../img/Footer/sun.png') no-repeat rgb(51, 51, 51) 81% 100%;
+}
+
+.footer-copyrights { /* Копирайт */
+  width: 30%;
+}
+
+.footer-copyrights-list {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.footer-contacts { /* Контакты */
+  width: 48%;
+}
+
+.footer-contacts-list {
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 71%;
+}
+
+.footer-contacts-address {
+  font-style: normal;
+}
+
+.footer-info {   /* Ссылки */
+  line-height: 24px;
+}
+.footer-link {
+  color: #cc9933;
+}
+
+.footer-social-list { /* Иконки */
+  /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+}
+
+.footer-social-icon {
+  /* Блочная модель */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  /* Оформление */
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center center;
+}
+
+.footer-social-item {
+  margin-bottom: 9px;
+}
+
+.footer-social-icon-tripadvisor{
+  background-image: url('../img/Footer/icons/tripadvisor.svg');
+}
+
+.footer-social-icon-twitter {
+  background-image: url('../img/Footer/icons/twitter.svg');
+}
+
+.footer-social-icon-facebook {
+  background-image: url('../img/Footer/icons/facebook.svg');
+}
+
+.footer-social-icon-vk {
+  background-image: url('../img/Footer/icons/social.svg');
+}
+
+.footer-social-icon-google-plus {
+  background-image: url('../img/Footer/icons/google-plus-social-logotype.svg');
+}
