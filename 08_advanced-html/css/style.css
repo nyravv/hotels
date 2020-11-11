@@ -79,6 +79,10 @@ h2 {
   padding-left: 15px; 
 }
 
+button {
+  cursor: pointer;
+}
+
 
 /* Шапка header*/
 .header {
@@ -157,15 +161,19 @@ h2 {
   margin-right: 47px;
 }
 
+.header-form {
+  display: flex;
+}
 
-
-.header-search { /* Кнопка поиска в низу шапки*/
+.header-search { /* Кнопка поиска внизу шапки*/
   /* Блочная модель */
   margin-left: 121px;
-  margin-right: 21px;
+  margin-right: 0;
   padding-left: 23px;
-  width: 355px; /* не получилось сделать max-width */
-  border-radius: 15px;
+  padding-right: 0;
+  width: 312px; /* не получилось сделать max-width */
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   min-height: 48px;
   border: none;
 
@@ -176,11 +184,25 @@ h2 {
   line-height: 1;
   
   /* Оформление */
-  background: url('../img/Header/search.svg') no-repeat  rgb(241, 241, 241);
-  background-position: 312px center;
-  background-size: 22px; 
+  background-color:rgb(241, 241, 241);
 }
 
+.search-magnifier {
+  /* Блочная модель */
+  margin-right: 21px;
+  width: 43px;
+  min-height: 48px;
+  padding: 13px 21px 13px 0px;
+
+  /* Оформление */
+  background: url('../img/Header/search.svg') no-repeat  rgb(241, 241, 241);
+  background-size: 22px; 
+  background-position: left center;
+  background-size: 22px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 
 /* Блоки Быстрая бронь и Спецпредложение */
@@ -220,6 +242,21 @@ h2 {
   /* Оформление */
   border-radius: 12px;
   background-color: rgb(255, 255, 255);
+  color: #a0a0a0;
+}
+
+input::-webkit-input-placeholder { /* цвет текста placeholder в Safari и Chrome */
+  color: #a0a0a0; 
+}
+
+input::-moz-placeholder { /* цвет текста placeholder в Firefox */
+  color: #a0a0a0; 
+}
+
+.reservation-select { /* убираем стрелочку у select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn-reservation { /* Кнопка Найти номер */
@@ -667,10 +704,6 @@ h2 {
 }
 
 /* Контакты */
-.section-contacts {
-  margin-right: 178px;
-}
-
 .contacts-list { /* ul контакты */
   /* Блочная модель */
   margin-top: 21px;
@@ -759,6 +792,9 @@ h2 {
 
 
 /* Напишите нам */
+.section-request {
+  margin: auto;
+}
 .heading-request { /* h2 */
   margin-top: 55px;
   margin-left: 33px;
