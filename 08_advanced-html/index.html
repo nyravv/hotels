@@ -28,9 +28,9 @@
             <li class="nav-item"><a class="nav-link" href="#">Блог</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
           </ul>
-          <form class="header-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post">
+          <form class="header-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post">
             <input class="search header-search" type="search" name="search" id="search" placeholder="Поиск"> 
-            <button class="search-magnifier" name="search-magnifier"></button>
+            <button class="search-magnifier" type="submit" name="search-magnifier"></button>
           </form>
         </nav>
       </div>
@@ -43,7 +43,7 @@
     <div class="container container-hero">
       <section class="section-reservation">
         <h2 class="heading heading-hero">Быстрая бронь</h2>
-        <form class="form-reservation" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post">
+        <form class="form-reservation" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post">
           <input class="reservation-field" type="text" id="city" name="city" placeholder="Город">
           <select class="reservation-field reservation-select" name="category">
             <option value="" disabled selected>Категория номера</option>
@@ -55,7 +55,7 @@
           <input class="reservation-field" type="number" id="nights" name="nights" placeholder="Количество ночей">
           <input class="reservation-field" type="number" id="guests" name="guests" placeholder="Количество гостей">
           <div class="submit-offers">
-            <input class="reservation-field btn-reservation" type="submit" value="Найти номер"> <!-- может быть надо было делать тегом button а не input? -->
+          <button class="reservation-field btn-reservation" type="submit" name="find-room" value="Найти номер">Найти номер</button> 
             <a class="reservation-available-offers" href="#"><span class="reservation-number-offers">9 756</span> предложений доступно</a>
           </div>
         </form>
@@ -383,7 +383,7 @@
               </div>
             </li>
             <li class="contacts-item contacts-item-btn">          
-              <button class="contacts-btn" type="submit">
+              <button class="contacts-btn" type="submit" name="build-route" value="Построить маршрут">
               Построить маршрут
               </button>
             </li>
@@ -392,11 +392,11 @@
 
         <section class="section-request">
           <h2 class="heading heading-request">Напишите нам</h2>
-          <form class="request-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post">
+          <form class="request-form" action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="post">
             <input class="request-input" type="text" name="name" id="name" placeholder="Имя">
             <input class="request-input" type="tel" name="phone" placeholder="+7" pattern="(\+7[-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})">
             <textarea class="request-input request-content" name="content" id="content" placeholder="Сообщение..."></textarea>
-            <input class="btn-send" type="submit" value="Отправить">
+            <button class="btn-send" type="submit" name="send" value="Отправить">Отправить</button>
           </form>
         </section>
       </div>
