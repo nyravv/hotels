@@ -1038,7 +1038,7 @@ input::-moz-placeholder { /* цвет текста placeholder в Firefox */
 
 .container-footer {
   /* Блочная модель */
-  display: flex;
+  /* display: flex; */
   padding: 41px 52px;
   min-height: 338px;
   height: 100%;
@@ -1047,12 +1047,13 @@ input::-moz-placeholder { /* цвет текста placeholder в Firefox */
   border-radius: 12px;
   background: url('../img/Footer/sun.png') no-repeat var(--darkGrey) 81% 100%;
 }
+
 .footer-block {
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 .footer-copyrights { /* Копирайт */
-  width: 30%;
+  /* width: 30%; */
 }
 
 .footer-copyrights-list {
@@ -1060,11 +1061,11 @@ input::-moz-placeholder { /* цвет текста placeholder в Firefox */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100%;
+  min-height: 245px;
 }
 
 .footer-contacts { /* Контакты */
-  width: 48%;
+  /* width: 48%; */
 }
 
 .footer-contacts-list {
@@ -1072,7 +1073,7 @@ input::-moz-placeholder { /* цвет текста placeholder в Firefox */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 71%;
+  min-height: 170px;
 }
 
 .footer-contacts-address {
