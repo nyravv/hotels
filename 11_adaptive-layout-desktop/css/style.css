@@ -96,10 +96,9 @@ button {
   /* Блочная модель */
   display: inline-block;
   text-align: center;
-  padding-top: 27.83px;
-  padding-left: 5px;
-  width: 280.52px;
-  height: 80px;
+  padding: 27px 35px;
+  max-width: 280.52px;
+  min-height: 80px;
 
   /* Типографика */
   color: var(--white);
@@ -282,11 +281,9 @@ button {
 .hero__btn { /* "Заказать расчёт" ссылка-кнопка */
   /* Блочная модель */
   display: inline-block;
-  padding-top: 27.83px;
-  padding-left: 5px;
+  padding: 27px 35px;
   max-width: 280.52px;
-  width: 100%;
-  height: 80px;
+  min-height: 80px;
   text-align: center;
 
   /* Типографика */
@@ -299,7 +296,7 @@ button {
   background-color: var(--orange);
 
   /* Анимации */
-  transform: translateX(2px);
+  transform: translateX(3px);
   transition-property: background-color;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
@@ -351,12 +348,12 @@ button {
 }
 
 .about__col:first-child {
-  max-width: 50.84%;
+  width: 49.2%;
   margin-right: auto;
 }
 
 .about__col:last-child {
-  max-width: 49.16%;
+  width: 49.16%;
   margin-top: 2px;
 }
 
@@ -365,8 +362,8 @@ button {
   display: flex;
   align-items: flex-end;
   margin-bottom: 48px;
-  /* max-width: 870px; */
-  width: 45.3vw;
+  max-width: 870px;
+  /* max-width: 45.3vw; */
   min-height: 622px;
 
   /* Оформление */
@@ -379,8 +376,9 @@ button {
   /* Блочная модель */
   display: flex;
   min-height: 176px;
-  padding-left: 54px;
-  padding-right: 68px;
+  padding: 8px 68px 10px 54px;
+  /* padding-left: 54px;
+  padding-right: 68px; */
   align-items: center;
 
   /* Оформление */
@@ -406,9 +404,9 @@ button {
 .about-banner__link { /* "Подробнее" Ссылка-кнопка */
   /* Блочная модель */
   display: inline-block;
-  width: 175px;
-  height: 60px;
-  padding-top: 19px;
+  max-width: 175px;
+  min-height: 60px;
+  padding: 18px 35px;
   text-align: center;
   border: 3px solid var(--orange);
 
@@ -432,12 +430,13 @@ button {
 .about__item { /* 2 блока с картинками слева */
   /* Блочная модель */
   display: inline-block;
-  max-width: 924px;
+  max-width: 870px;
   width: 100%;
   min-height: 295px;
   padding-top: 7.6%;
   padding-left: 34.4%;
   padding-right: 12%;
+  padding-bottom: 5%;
   margin-bottom: 59px;
   border: 1px solid var(--whiteGrey);
 }
@@ -523,7 +522,7 @@ button {
 
 .how-work__content { /* Родитель двух колонок how-work__col */
   display: flex;
-  margin-left: 2px;
+  transform: translateX(2px);
 }
 
 .how-work__col:first-child {
@@ -577,7 +576,7 @@ button {
   background-size: cover;
 
   /* Анимации */
-  transform: translate(2px, -1px);
+  transform: translate(1px, -1px);
 }
 
 .how-work__btn-block { /* Блок с двумя ссылками-кнопками */
@@ -588,9 +587,9 @@ button {
   /* Блочная модель */
   display: inline-block;
   margin-right: 30px;
-  padding-top: 22px;
-  width: 175px;
-  height: 60px;
+  padding: 21px 38px;
+  max-width: 175px;
+  min-height: 60px;
   text-align: center;
   background-color: var(--orange);
 
@@ -614,9 +613,9 @@ button {
 .how-work__btn-download { /* Ссылка-кнопка "Договор" */
   /* Блочная модель */
   display: inline-block;
-  padding-top: 20px;
-  width: 147px;
-  height: 58px;
+  padding: 20px 37px;
+  max-width: 147px;
+  min-height: 58px;
   text-align: center;
   border: 1px solid var(--darkGrey);
 
@@ -656,7 +655,7 @@ button {
   margin-left: 4px;
 }
 
-.questions__item { /* li строка с h3 и span */
+.questions__item { /* li строка с h3 и button */
   /* Блочная модель */
   display: flex;
   padding-top: 32px;
@@ -665,7 +664,7 @@ button {
   border-bottom: 1px solid var(--whiteGrey);
 }
 
-.questions__item:first-child { /* li 1 строка с h3 и span */
+.questions__item:first-child { /* li 1 строка с h3 и button */
   border-top: 1px solid var(--whiteGrey);
 }
 
@@ -712,7 +711,7 @@ button {
   color: var(--whiteGrey);
 }
 
-.questions__icon { /* span серый круг */
+.questions__icon { /* button серый круг */
   /* Позиционирование */
   position: relative;
 
@@ -788,7 +787,7 @@ button {
 .footer__wrap { /* черный подвал */
   /* Позиционирование */
   min-height: 630px;
-  padding-top: 47px;
+  padding-top: 48px;
   padding-bottom: 80px;
    /* display: flex; */
 
@@ -849,7 +848,7 @@ button {
   margin-right: 25px;
 }
 
-.footer-social__link { /* span c иконоками соц.сетей */
+.footer-social__link { /* ссылка a c иконоками соц.сетей */
   /* Блочная модель */
   display: inline-block;
   width: 61px;
@@ -873,7 +872,7 @@ button {
 
 .footer__title { /* h2 "Оставить заявку" */
   transform: translateX(-3px);
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   color: var(--whiteGrey); 
 }
 
@@ -893,7 +892,7 @@ button {
 }
 
 .request-form__input:last-child {
-  margin-top: 32px;
+  margin-top: 31px;
 }
 
 .request-form__input::-webkit-input-placeholder { /* цвет текста placeholder в Safari и Chrome */
@@ -914,12 +913,10 @@ button {
   /* Блочная модель */
   display: inline-block;
   text-align: center;
-  margin-right: 37px;
-  padding-top: 0px;
-  padding-left: 6px;
+  margin-right: 36px;
+  padding: 20px 50.6px;
   max-width: 269px;
-  width: 100%;
-  height: 60px;
+  min-height: 60px;
 
   /* Типографика */
   color: var(--white);
@@ -1018,9 +1015,11 @@ label {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 954px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* max-width: 954px; */
   }
 
   .header {
@@ -1179,10 +1178,8 @@ label {
 
   .hero__btn { /* "Заказать расчёт" ссылка-кнопка */
     /* Блочная модель */
-    padding-top: 26px;
-    padding-left: 4px;
+    padding: 25px 36px;
     max-width: 287px;
-    width: 100%;
 
     /* Типографика */
     font-size: 24px;
@@ -1206,6 +1203,7 @@ label {
 
   .about__descr {
     margin-bottom: 59px;
+    transform: translateX(-1px);
   }
 
   .about__content {
@@ -1213,11 +1211,11 @@ label {
   }
 
   .about__col:first-child {
-    max-width: 100%; 
+    width: 100%; 
   }
 
   .about__col:last-child {
-    max-width: 100%; 
+    width: 100%; 
   }
 
   .about-banner {
@@ -1225,7 +1223,7 @@ label {
     margin-right: 0;
     max-width: 924px;
     width: 100%;
-    height: 640px;
+    min-height: 640px;
 
     /* Оформление */
     background: url('/img/AboutUs/men1024.jpg');
@@ -1267,7 +1265,7 @@ label {
   }
 
   .about__i {
-    margin-left: 0;
+    margin-left: 1px;
     margin-right: 4px;
   }
 
@@ -1280,7 +1278,7 @@ label {
   }
 
   .how-work__content { /* Родитель двух колонок how-work__col */
-    margin-left: 0;
+    transform: translateX(0);
   }
 
   .how-work__item:not(:last-child) { /* li шаги, кроме последнего */
@@ -1314,8 +1312,8 @@ label {
   }
 
   .how-work__btn-download {
-    height: 60px;
-    padding-top: 21px;
+    max-width: 200px;
+    min-height: 60px;
   }
 
   .questions__title {/* h2 "Часто задаваемые вопросы" */
@@ -1340,37 +1338,41 @@ label {
   }
 
   /* какая-то фигня начинается, с подгоном по макету */
-  .questions__item:first-child { /* li 1 строка с h3 и span */
+  .questions__item:first-child { /* li 1 строка с h3 и button */
     padding-top: 41px;
     padding-bottom: 32px;
   }
 
-  .questions__item:nth-child(2) { /* li 2 строка с h3 и span */
+  .questions__item:nth-child(2) { /* li 2 строка с h3 и button */
     padding-top: 23px;
     padding-bottom: 22px;
   }
 
-  .questions__item:nth-child(3) { /* li 3 строка с h3 и span */
+  .questions__item:nth-child(3) { /* li 3 строка с h3 и button */
     padding-top: 32px;
     padding-bottom: 31px;
   }
 
-  .questions__item:nth-child(4) { /* li 4 строка с h3 и span */
+  .questions__item:nth-child(4) { /* li 4 строка с h3 и button */
     padding-top: 23px;
     padding-bottom: 21px;
   }
 
-  .questions__icon { /* span серый круг */
+  .questions__icon { /* button серый круг */
     margin-right: 0;
   }
 
-  .questions__icon--1 { /* span 1ый серый круг */
+  .questions__icon--1 { /* button 1ый серый круг */
     transform: translateY(1px);
   }
 
   .questions__icon--2,
-  .questions__icon--4 { /* span 2ой, 4ый серый круг */
+  .questions__icon--4 { /* button 2ой, 4ый серый круг */
     transform: translateY(9px);
+  }
+
+  .footer__wrap {
+    padding-top: 47px;
   }
 
   .footer__col:nth-child(2) {
@@ -1391,8 +1393,9 @@ label {
   }
 
   .request-form__btn { /* кнопка "Отправить данные" */
-   max-width: 241px;
-   margin-right: 30px;
+    max-width: 241px;
+    margin-right: 30px;
+    padding: 18px 36px;
   }
 }
 
@@ -1401,9 +1404,9 @@ label {
 }
 
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     max-width: 698px;
-  }
+  } */
 
   .hero__container{
     margin-right: 0;
@@ -1446,6 +1449,7 @@ label {
   .about-banner__caption {
     padding-left: 29px;
     padding-right: 30px;
+    padding-top: 7px;
   }
 
   .about-banner__text {
@@ -1541,18 +1545,18 @@ label {
     max-width: 70%;
   }
 
-  .questions__item:first-child { /* li 1 строка с h3 и span */
+  .questions__item:first-child { /* li 1 строка с h3 и button */
     padding-top: 33px;
     padding-bottom: 21px;
   }
 
   .questions__item:nth-child(3),
-  .questions__item:nth-child(5) { /* li 3 и 5 строка с h3 и span */
+  .questions__item:nth-child(5) { /* li 3 и 5 строка с h3 и button */
     padding-top: 23px;
     padding-bottom: 21px;
   }
 
-  .questions__icon { /* span серый круг */
+  .questions__icon { /* button серый круг */
     transform: translateY(9px);
   }
 
