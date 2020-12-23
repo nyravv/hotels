@@ -892,6 +892,7 @@ button {
 }
 
 .request-form__input:last-child {
+  display: flex;
   margin-top: 31px;
 }
 
@@ -913,7 +914,7 @@ button {
   /* Блочная модель */
   display: inline-block;
   text-align: center;
-  margin-right: 36px;
+  margin-right: 40px;
   padding: 20px 50.6px;
   max-width: 269px;
   min-height: 60px;
@@ -937,6 +938,10 @@ button {
 .request-form__btn:hover,
 .request-form__btn:focus {
   background-color: rgba(255, 153, 0, 0.6);
+}
+
+.request-form__check {
+  align-self: center;
 }
 
 .request-form__checkbox {
@@ -964,7 +969,8 @@ label {
   border: 1px solid var(--whiteGrey);
 
   /* Анимации */
-  transform: translate(-17px, 23px);
+  transform: translate(-17px, 2px);
+  cursor: pointer;
 }
 
 .request-form__checkbox + .request-form__checkbox--custom::before { /* Зеленая галочка */
@@ -1012,7 +1018,29 @@ label {
 
 
 @media (max-width: 1366px) {
+  .about__content {
+    flex-direction: column;
+  }
 
+  .about__col:first-child {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about__col:last-child {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .about-banner {
+    max-width: none;
+  }
+
+  .about__item {
+    max-width: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1221,8 +1249,6 @@ label {
   .about-banner {
     /* Блочная модель */
     margin-right: 0;
-    max-width: 924px;
-    width: 100%;
     min-height: 640px;
 
     /* Оформление */
@@ -1242,8 +1268,6 @@ label {
   }
 
   .about__item { /* 2 блока с картинками слева */
-    max-width: 924px;
-    width: 100%;
     padding-top: 7.2%;
     padding-left: 37.6%;
     padding-right: 10.5%;
@@ -1392,9 +1416,13 @@ label {
    display: none;
   }
 
+  .request-form__checkbox + .request-form__checkbox--custom {
+    transform: translate(-18px, 2px);
+  }
+
   .request-form__btn { /* кнопка "Отправить данные" */
     max-width: 241px;
-    margin-right: 30px;
+    margin-right: 35px;
     padding: 18px 36px;
   }
 }
