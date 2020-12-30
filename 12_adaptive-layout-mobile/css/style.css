@@ -248,7 +248,7 @@ button {
   background-size: cover;
 }
 
-.hero__title { /* Заголовок h1 */
+.hero__title { /* Заголовок h2 */
   /* Блочная модель */
   margin: 0;
 
@@ -417,7 +417,7 @@ button {
   color: var(--white);
 
   /* Анимации */
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
@@ -425,6 +425,7 @@ button {
 .about-banner__link:hover,
 .about-banner__link:focus {
   background-color: var(--orange);
+  color: var(--white);
 }
 
 .about__item { /* 2 блока с картинками слева */
@@ -844,7 +845,7 @@ button {
   transform: translateX(-1px);
 }
 
-.footer-social__item { /* li списка иконок соц.сетей */
+.footer-social__item:not(:last-child) { /* li списка иконок соц.сетей */
   margin-right: 25px;
 }
 
@@ -1184,7 +1185,7 @@ label {
     background-size: cover;
   }
 
-  .hero__title { /* Заголовок h1 */
+  .hero__title { /* Заголовок h2 */
     /* Типографика */
     font-size: 60px;
     font-weight: 800;
@@ -1570,7 +1571,7 @@ label {
   }
 
   .questions__item:nth-child(3) > .questions__block {
-    max-width: 70%;
+    width: 70%;
   }
 
   .questions__item:first-child { /* li 1 строка с h3 и button */
@@ -1617,4 +1618,494 @@ label {
 
 @media (max-width: 576px) {
 
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header {
+    padding-top: 0px;
+    padding-bottom: 1px;
+  }
+
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .header__img {
+    /* Блочная модель */
+    width: 97px;
+    height: 31px;
+
+    /* Анимации */
+    transform: translateY(2px);
+  }
+
+  .burger {
+    /* Блочная модель */
+    padding-right: 0px;
+    padding-left: 19px;
+    order: 2;
+
+    /* Анимации */
+    transform: translateX(0px);
+  }
+
+  .burger__line {
+    margin-right: 0px;
+    width: 25px;
+    height: 3px;
+  }
+
+  .burger__line::before, 
+  .burger__line::after {
+    margin-right: 0px;
+    width: 25px;
+    height: 3px;
+  }
+
+  .burger__line::before {
+    transform: translate(0, -8px);
+  }
+
+  .burger__line::after {
+    transform: translate(0, 5px);
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .hero {
+    margin-bottom: 39px;
+  }
+
+  .banner__slide--1 {
+    min-height: 307px;
+    padding: 77px 23px 10px 24px;
+  }
+
+  .hero__title {
+    /* Типографика */
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__desc {
+    /* Блочная модель */
+    margin-bottom: 35px;
+    margin-top: 7px;
+
+    /* Типографика */
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .hero__btn {
+    /* Блочная модель */
+    display: block;
+    max-width: 162px;
+    padding: 11px 14px;
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Типографика */
+    font-size: 12px;
+    line-height: 15px;
+    
+    /* Анимации */
+    transform: translateX(-1px);
+  }
+
+  .about {
+    margin-bottom: 33px;
+  }
+
+  .title {
+    /* Типографика */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about__title {
+    /* Блочная модель */
+    margin-left: 0;
+    margin-bottom: 2px;
+   
+    /* Анимации */
+    transform: translateX(0px);
+  }
+
+  .about__descr {
+    /* Блочная модель */
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 28px;
+
+    /* Анимации */
+    transform: translateX(0px);
+  }
+
+  .about-banner {
+    /* Блочная модель */
+    min-height: 200px;
+
+    /* Оформление */
+    background: url('/img/AboutUs/men320.jpg') no-repeat;
+    background-size: contain;
+  }
+
+  .about-banner__caption {
+    /* Блочная модель */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 71.6%;
+
+    /* Оформление */
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .about-banner__text {
+    /* Блочная модель */
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 11px;
+
+    /* Типографика */
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--darkGrey);
+    letter-spacing: normal;
+    font-weight: 400;
+
+    /* Анимации */
+    transform: translateX(-1px);
+  }
+
+  .about-banner__link {
+    /* Блочная модель */
+    min-height: 40px;
+    padding: 10px 40px 12px 43px;
+    border: 2px solid var(--orange);
+
+    /* Типографика */
+    color: var(--orange);
+    font-size: 12px;
+  }
+
+  .about__item {
+    padding: 0;
+    padding-top: 21.4%;
+    border: none;
+  }
+
+  .about__item--1 {
+    /* Блочная модель */
+    margin-bottom: 7px;
+    background-position: 0 0;
+
+    /* Оформление */
+    background-size: 22%;
+  }
+
+  .about__item--2 {
+    /* Блочная модель */
+    margin-bottom: 0;
+    padding-top: 23.6%;
+
+    /* Оформление */
+    background-position: 0 0;
+    background-size: 22%;
+  }
+
+  .about__item--desc {
+    /* Типографика */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.008em;
+  }
+
+  .about__item--text {
+    /* Типографика */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-work {
+    margin-bottom: 39px;
+  }
+
+  .how-work__title {
+    /* Блочная модель */
+    margin-bottom: 34px;
+
+    /* Анимации */
+    transform: translateX(0px);
+  }
+
+  .how-work__list {
+    margin-bottom: 17px;
+  }
+
+  .how-work__link {
+    /* Типографика */
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how-work__col:last-child {
+    min-height: 160px;
+    margin-bottom: 2px;
+  }
+
+  .how-work__img {
+    min-height: 160px;
+  }
+
+  .step__title {
+    /* Блочная модель */
+    margin-bottom: -1px;
+
+    /* Типографика */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.008em;
+  }
+
+  .step__text {
+    /* Блочная модель */
+    margin-bottom: 21px;
+
+    /* Типографика */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-work__btn-detail {
+    /* Блочная модель */
+    margin-right: 10px;
+    padding: 11px;
+    max-width: 162px;
+    min-height: 40px;
+    width: 100%;
+
+    /* Типографика */
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .how-work__btn-download {
+    /* Блочная модель */
+    padding: 11px;
+    max-width: 118px;
+    min-height: 40px;
+    width: 100%;
+
+    /* Типографика */
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .questions {
+    margin-bottom: 39px;
+  }
+
+  .questions__item > .questions__block {
+    width: 80%;
+  }
+
+  .questions__item:nth-child(2) > .questions__block,
+  .questions__item:nth-child(3) > .questions__block {
+    width: 77%;
+  }
+
+  .questions__title {
+    /* Блочная модель */
+    margin-bottom: 14px;
+
+    /* Типографика */
+    letter-spacing: normal;
+
+    /* Анимации */
+    transform: translateX(-1px);
+  }
+
+  .questions__subject {
+    /* Типографика */
+    letter-spacing: 0.008em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .questions__item:first-child,
+  .questions__item:nth-child(2n),
+  .questions__item:nth-child(3n),
+  .questions__item:last-child {
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  .questions__icon {
+    /* Блочная модель */
+    display: inline-block;
+    align-self: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    /* Анимации */
+    transform: translateY(-1px);
+  }
+
+  .questions__icon::before {
+    top: 19%;
+    right: 47%;
+    height: 18.6px; 
+  }
+
+  .questions__icon::after {
+    top: 48%;
+    right: 18%;
+    width: 18.6px;
+  }
+
+  .footer__wrap {
+    padding-top: 27px;
+    padding-bottom: 15px;
+  }
+
+  .footer__title {
+    /* Блочная модель */
+    margin-bottom: 21px;
+
+    /* Анимации */
+    transform: translateX(-1px);
+  }
+
+  .footer__col--2 {
+    width: 100%;
+  }
+
+  .request-form__input:not(:last-child) {
+    padding-left: 20px;
+  }
+
+  .request-form__input::-webkit-input-placeholder { /* размер текста placeholder в Safari и Chrome */
+    font-size: 14px;
+  }
+  
+  .request-form__input::-moz-placeholder { /* размер текста placeholder в Firefox */
+    font-size: 14px;
+  }
+
+  .request-form__input:last-child {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .request-form__btn {
+    /* Блочная модель */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 19px;
+    max-width: 180px;
+    min-height: 40px;
+    padding: 10px 27px;
+
+    /* Типографика */
+    font-size: 12px;
+  }
+
+  .request-form__label {
+    margin-left: 17px;
+  }
+
+  .request-form__checkbox + .request-form__checkbox--custom {
+    transform: translate(-18px, 1px);;
+  }
+
+  .footer__col--1 {
+    /* Блочная модель */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 23px;
+    width: 100%;
+    border-top: 1px solid #595959;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__img {
+    width: 131px;
+    height: 42px;
+  }
+
+  .footer-social__list {
+    /* Блочная модель */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Анимации */
+    transform: translateX(0px);
+  }
+
+  .footer-social__link {
+    width: 34.4px;
+    height: 44px;
+  }
+
+  .footer-social__link svg {
+    width: 34.4px;
+    height: 34.4px;
+  }
+
+  .footer-social__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  .footer__col--2 {
+    margin-bottom: 31px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .banner__slide--1 {
+    background: url('../img/Hero/low-angle-320\(1\).jpg') no-repeat;
+  }
+
+  .about-banner {
+    background: url('../img/AboutUs/men320.jpg') no-repeat;
+  }
+
+  .how-work__img {
+    background: url('../img/Stage/arms320.jpg') no-repeat;
+  }
+
+  .how-work__btn-detail {
+    margin-right: auto;
+  }
 }
